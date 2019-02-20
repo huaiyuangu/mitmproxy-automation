@@ -11,7 +11,7 @@ sudo pip install mitmproxy
 import time
 from proxyserver import MITMProxyRunThread
 
-MITMProxyRunThread(8080, 'mitmproxy').start()
+MITMProxyRunThread(8080, 'mitmproxy', plugin=['plugin_req_requestrecorder']).start()
 
 time.sleep(10)
 ```
