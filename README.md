@@ -1,12 +1,12 @@
-### run mitmproxy to capture network traffics as background in automation testing
+# run mitmproxy to capture network traffics as background in automation testing
 
 
-# how to setup
+### how to setup
 ```
 sudo pip install mitmproxy
 ```
 
-# call MITMProxyRunThread
+### call MITMProxyRunThread in python code
 ```
 import time
 from proxyserver import MITMProxyRunThread
