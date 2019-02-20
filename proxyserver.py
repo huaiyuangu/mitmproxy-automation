@@ -126,11 +126,11 @@ class MITMProxyRunThread(threading.Thread):
     check all resource pool status and store in database
     """
 
-    def __init__(self, port, name, addon = []):
+    def __init__(self, port, name, plugin = []):
         super(MITMProxyRunThread, self).__init__(name=name)
         self.port = port
         self.name = name
-        self.addon = addon
+        self.addon = plugin
         self.master = None
 
         self._stop = threading.Event()
